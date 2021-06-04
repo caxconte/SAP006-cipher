@@ -2,13 +2,40 @@
 <html>
 <head>
   <meta charset="utf-8">
+
   <title>Caesar Cipher</title>
+
   <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
-  <div id="root">
-    <h1>Hello world!</h1>
+  <div>
+    <div class="content">
+      <h1>CriptoGame</h1>
+
+    <div class="">Escolha a chave
+      <input type="number" id="offset_input" value="Escolhe a chave.">
+    </div>
+
+    <div class="blocoDeTexto">
+      <header class="blocodetexto_header"></header>
+      <h3>Texto</h3>
+      <input type="text" id="texto_input" value="Digite a mensagem que será criptografada ou traduzida.">
+
+    </div>
+
+
+      <p id="resultado"></p>
+
+      <input type="button" value="Criptografar">
+      <input type="button" value="Traduzir">
+
+    </div>
+      
   </div>
+
   <script src="index.js" type="module"></script>
+
 </body>
 </html>
