@@ -1,55 +1,8 @@
 /* css */
 
-/* Grid */
-.grid {
-	display: grid;
-}
-
-.logo {
-	grid-area: logo;
-}
-
-.nav {
-	grid-area: nav;
-}
-
-.content {
-	grid-area: content;
-}
-
-.sidenav {
-	grid-area: sidenav;
-}
-
-.advert {
-	grid-area: advert;
-}
-
-.footer {
-	grid-area: footer;
-}
-
-.grid-template-areas-2 {
-	grid-template-areas:
-		"sidenav logo nav"
-		"sidenav content advert"
-		"sidenav content footer"
-		;
-}
-
-/* Grid Item */
-.item {
-	margin: 5px;
-	background: tomato;
-	text-align: center;
-	font-size: 1.5em;
-}
-
-.grid {
-	max-width: 400px;
-	margin: 0 auto;
-	border: 1px solid #ccc;
-}
+textarea {
+	resize: none;
+  }
 
 h1 {
 	text-align: left;
@@ -62,18 +15,4 @@ body {
 	color: #333;
 	padding-bottom: 60px;
 	margin: 20px;
-}
-
-body > div {
-	padding: 40px 0;
-}
-
-body > div:nth-of-type(even) {
-	background: rgba(0,0,0,.03);
-}
-
-body > div > img {
-	display: block;
-	margin: 0 auto;
-	max-width: 100%;
 }
