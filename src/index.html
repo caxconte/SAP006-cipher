@@ -3,37 +3,37 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Caesar Cipher</title>
+  <title>CryptoGame</title>
 
   <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
-  <div>
-    <div class="content">
-      <h1>CriptoGame</h1>
+  <header>
+    <h1>CriptoGame</h1>
+    <p>Vamos jogar?</p>
+  </header>
 
-    <div class="">Escolha a chave
-      <input type="number" id="offset_input" value="Escolhe a chave.">
-    </div>
+  <section id="content">
+    <p>Escolha a chave</p>
+    <input type="number" id="offset_input" placeholder="Escolha a chave.">
 
     <div class="blocoDeTexto">
-      <header class="blocodetexto_header"></header>
-      <h3>Texto</h3>
-      <input type="text" id="texto_input" value="Digite a mensagem que será criptografada ou traduzida.">
+      <header class="blocodetexto_header">Digite a mensagem que será criptografada ou traduzida.</header>
+      <textArea id="texto_input" cols="60" rows="7" placeholder="Esta mensagem é um exemplo..."></textArea>
 
     </div>
 
+    <button id="encryptButton">CRIPTOGRAFAR</button>
+    <button id="button">TRADUZIR</button>
 
-      <p id="resultado"></p>
-
-      <input type="button" value="Criptografar">
-      <input type="button" value="Traduzir">
-
+    <div class="resultado">
+    <textarea id="retornodafuncao" cols="60" rows="7"></textarea>
     </div>
-      
-  </div>
+
+
+  </section>
 
   <script src="index.js" type="module"></script>
 
