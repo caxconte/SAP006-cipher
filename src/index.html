@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>CryptoGame</title>
+  <title>Frida K'alho</title>
 
   <link rel="stylesheet" href="style.css" />
 
@@ -11,29 +11,75 @@
 
 <body>
   <header>
-    <h1>CriptoGame</h1>
-    <p>Vamos jogar?</p>
+    <h1>Frida K'alho</h1>
+      <!-- <p>
+        <h2>
+        "Amuralhar o próprio sofrimento é arriscar que ele
+        te devore desde o interior." - Frida Kahlo
+        </h2>
+      </p> -->
   </header>
 
-  <section id="content">
-    <p>Escolha a chave</p>
-    <input type="number" id="offset_input" placeholder="Escolha a chave.">
+  <nav class="menu" id="principal">
+    <ul>
+      <li><a href="src/receitas/index.html" class="home">HOME</a></li>
+      <li><a href="src/receitas/receita1.html">VEGANAS</a></li>
+      <li><a href="src/receitas/receita2.html">CARNÍVORAS</a></li>
+      <li><a href="src/receitas/receita3.html">SALADAS</a></li>
+    </ul>
+  </nav>
 
-    <div class="blocoDeTexto">
-      <header class="blocodetexto_header">Digite a mensagem que será criptografada ou traduzida.</header>
-      <textArea id="texto_input" cols="60" rows="7" placeholder="Esta mensagem é um exemplo..."></textArea>
+  <main>
+    <div class="content">
+      <h3>NOME DA RECEITA</h3>
+      <img url="">
+      <br>
+      INGREDIENTES
+      <br>
+      <br>1kg de carne moída
+      <br>5c.s. de óleo
+      <br>1 cebola grande ralada
+      <br>5 dentes de alho amassados
+      <br>2pct de Doritos (grande)
+      <br>200g de queijo cheddar de bisnaga
+      <br>1 1/2c.s. de pimenta chilli
+      <br>3c.s. de molho inglês 
+      <br>Sal e temperos como ervas finas, manjerona e outros, a gosto
 
-    </div>
+      <br><br>MODO DE PREPARO
+      <br>Coloque numa panela o óleo, a cebola e o alho e doure, em seguida acrescente a carne moída e frite bem.
+      <br>Então coloque temperos do seu gosto, o sal, o molho inglês e a pimenta chilli.
+      <br>Depois de preparada a carne, forre uma travessa com o doritos, coloque a carne por cima, depois o sour cream e por ultimo o queijo cheddar.
 
-    <button id="encryptButton">CRIPTOGRAFAR</button>
-    <button id="button">TRADUZIR</button>
+      <br><br>Coloque no forno por cerca de 15 minutos, numa temperatura de cerca de 180º graus.
+    </section>
 
-    <div class="resultado">
-    <textarea id="retornodafuncao" cols="60" rows="7"></textarea>
-    </div>
+    <section id="comentarios">
+      <h2>Comentários</h2>
+
+      <input type="number" id="offset"
+       placeholder="Escolha a chave.">
+      
+      <div class="encryptArea">
+        <p>Digite aqui seu comentário/denúncia...</p>
+        <textarea id="textToEncrypt" cols="50" rows="7" placeholder="Meu nome é Maria, sou moradora da Rua... e estou passando pela seguinte situação de violência..."></textarea>
+
+      </div>
+
+      <button id="encryptButton">CRIPTOGRAFAR</button>
+      <button id="translateButton">TRADUZIR</button>
+
+      <div class="decryptArea">
+      <textarea id="textToDecrypt" cols="50" rows="7" placeholder="Aqui aparecerá sua mensagem criptografada ou traduzida!"></textarea>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
 
 
-  </section>
+  </footer>
 
   <script src="index.js" type="module"></script>
 

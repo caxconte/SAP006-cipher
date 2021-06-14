@@ -1,4 +1,11 @@
+
 /* css */
+
+* {
+	margin:0;
+	padding:0;
+}
+
 
 body {
 	background-color: #FDF5D0;
@@ -22,14 +29,13 @@ header {
 }
 
 .menu {
-	display: block;
+	display: inline-block;
 }
 
-#content {
+.content {
 	color: #49631C;
-	background-color: #8A0101;
+	background-color: #FDF5D0;
 	display: inline-block;
-	/* opacity: .4; */
 }
 
 .receita {
@@ -63,13 +69,13 @@ textarea {
 ul {
     margin: 10;
     padding: 0;
-	display: block;
+	display: inline-block;
 }
 
 li {
     list-style: none; 
     margin: 10px;
-    display: block;
+    display: inline-block;
 }
 
 li a {
