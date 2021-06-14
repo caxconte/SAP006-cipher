@@ -35,7 +35,7 @@ header {
 .content {
 	color: #49631C;
 	background-color: #FDF5D0;
-	display: inline-block;
+	display: flexbox;
 }
 
 .receita {
@@ -44,6 +44,16 @@ header {
 	margin-bottom: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
+	justify-content: right;
+}
+
+.icone-receita {
+	justify-content:space-around;
+}
+
+.icone-img {
+	width: 60px;
+	height: 60px;
 }
 
 h1 {

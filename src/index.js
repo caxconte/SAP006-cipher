@@ -1,45 +1,28 @@
 import cipher from './cipher.js';
 
-let textToEncrypt = document.getElementById("textToEncrypt");
 let textToDecrypt = document.getElementById("textToDecrypt");
-
-// console.log(offset);
-// console.log(str);
 
 // Botões //
 
 const encryptBtn = document.getElementById("encryptButton");
+
+    function encryptButtonFunction () {
+        const offsetStr = document.getElementById("offset");
+        const offset = parseInt(offsetStr.value);
+        const string = document.getElementById("textToEncrypt").value;
+        textToDecrypt.value = cipher.encode(offset, string);
+    }
+    encryptBtn.addEventListener("click", encryptButtonFunction);
+
+    
+
 const translateBtn = document.getElementById("translateButton");
 
-encryptBtn.onclick = function (event) {
-    let str = textToEncrypt.value;
-    let offsetStr = document.getElementById("offset").value;
-    let offset = parseInt(offsetStr);
-
-    if (offset > 0) {
-        let decryptText = cipher.encode(offset, str);
-        textToDecrypt.value = decryptText;
-    // } else if (offset < 0) {
-    //     let decryptText = cipher.decode((-offset), text);
-    //     textToDecrypt.value = decryptText;
+    function decryptButtonFunction () {
+        const offsetStr = document.getElementById("offset");
+        const offset = parseInt(offsetStr.value);
+        const string = document.getElementById("textToEncrypt").value;
+        textToDecrypt.value = cipher.decode(offset, string);
     }
-}
 
-translateBtn.onclick = function (event) {
-    let str = textToDecrypt.value;
-    let offsetStr = document.getElementById("offset").value;
-    let offset = parseInt(offsetStr);
-
-    if (offset > 0) {
-        let decryptText = cipher.decode(offset,str);
-        textToDecrypt.value = decryptText;
-    // } else if (offset < 0) {
-    //     let decryptText = cipher.decode((-offset), text);
-    //     textToDecrypt.value = decryptText;
-    }
-}
-
-// cipher.encode();
-// cipher.decode();
-
-console.log(cipher);
+    translateBtn.addEventListener("click", decryptButtonFunction);
