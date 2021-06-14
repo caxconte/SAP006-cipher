@@ -14,6 +14,12 @@
   complementares](#8-guias-dicas-e-leituras-complementares)
 * [9. Checklist](#9-checklist)
 
+
+
+
+
+
+
 ***
 
 ## 1. Prefácio
@@ -45,19 +51,20 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 ## 2. Resumo do projeto
 
-O que eu tenho que fazer exatamente? Neste projeto você criará a primeira
-aplicação web do _bootcamp_. Nela o usuário poderá cifrar e decifrar um texto
-indicando a chave de deslocamento (_offset_).
+### FRIDA K'ALHO
+O projeto consiste em uma página de receitas culinárias reais, onde uma mulher poderá cifrar uma mensagem de denúncio de abusos e/ou violência doméstica através dos comentários e enviá-la para a central de monitoramento 24h do site, que acionará a  polícia local.
 
-O tema é livre. Você deve pensar em alguma situação de vida real em que seja
-necessário cifrar uma mensagem e pensar em como deve ser a experiência do
-usuário (tela, explicações, mensagens, cores, marca?, etc.). Algumas ideias de
-exemplo:
+#### Quem são os principais usuários do produto?
+Mulheres em situação de violência, que precisam discretamente solicitar socorro;
 
-* Mensagens secretas para alguma pessoa.
-* Ferramenta de mensagens internas de uma organização em uma zona de conflito.
-* Cifrar cartões de crédito.
-* Criar senhas seguras para email.
+#### Quais são os objetivos do usuário em relação com o produto?
+Denunciar uma situação de abuso com segurança, através de uma plataforma de denuncia disfarçada de página de receitas culinárias;
+
+#### Como você acredita que o produto está resolvendo os problemas do usuário?
+Possibilidade de acionar socorro encriptando uma mensagem com endereço completo, situação que está acontecendo, grau de emergência. A mensagem criptografada é enviada pra central de monitoramento 24h, que aciona a polícia ou delegacia da mulher local. Com interface discreta (página de receitas culinárias);
+
+#### Como foi o processo e decisões do design?
+O projeto foi pensado pra que a mulher possa denunciar com segurança uma situação de violência, através de uma plataforma discreta, ela poderá efetuar sua denúncia como se estivesse deixando um comentário sobre uma receita culinária.
 
 ## 3. Objetivos de aprendizagem
 
