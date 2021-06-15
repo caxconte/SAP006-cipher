@@ -66,8 +66,8 @@ Possibilidade de acionar socorro encriptando uma mensagem com endereço completo
 #### Como foi o processo e decisões do design?
 O projeto foi pensado pra que a mulher possa denunciar com segurança uma situação de violência, através de uma plataforma discreta, ela poderá efetuar sua denúncia como se estivesse deixando um comentário sobre uma receita culinária.
 
-![Tela Inicial](img/homehome preview.png)
-![Pagina com a Receita](img/recipe pagepreview.png)
+![Tela Inicial](src/img/homehome preview.png)
+![Pagina com a Receita](src/img/recipe pagepreview.png)
 
 #### Interface do usuário (UI)
 
