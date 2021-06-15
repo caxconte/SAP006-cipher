@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Frida K'alho</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header>
+    <h1 class="logo"><img src="./img/garlic.png" id="img-logo" width="60" height="60"> Frida K'alho</h1>
+
+    <nav class="menu" id="principal">
+      <ul>
+        <li><a href="pages/AboutUs.html" class="about-us">Sobre Nós</a></li>
+        <li><a href="pages/AboutCipher.html">Sobre a Cifra</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="mae-recipe">
+      <div class="filha-recipe">
+        <img class="icone-img" src="./img/lasanha-berinjela.jpg" href="./recipes/lasanha-berinjela.html">
+        <h3><a href="recipes/lasanha-berinjela.html">Lasanha de Berinjela</a></h3>
+        <p>Já imaginou cozinhar em apenas 50 minutos uma lasanha extremamente saborosa? Confere aqui!</p>
+      </div>
+
+
+      <div class="filha-recipe">
+        <img class="icone-img" src="./img/abobrinha-recheada.jpeg" href="./recipes/abobrinha.html">
+        <h3><a href="recipes/abobrinha.html">Abobrinha Recheada</a></h3>
+        <p>Essa receita contém quinoa, um ingrediente super saudável e muito versátil!</p>
+      </div>
+
+      <div class="filha-recipe">
+        <img class="icone-img" src="./img/churrasco-vegetariano.jpg" href="./recipes/churrasco.html">
+        <h3><a href="recipes/churrasco.html">Churrasco Vegetariano</a></h3>
+        <p>Quem não ama um bom churrasco brasileiro? Se você não come carne, não precisa se preocupar, confere essas dicas de espetinhos vegetarianos deliciosos!</p>
+      </div>
+
+      <div class="filha-recipe">
+        <img class="icone-img" src="./img/curry-de-legumes.jpg" href="./recipes/curry.html">
+        <h3><a href="recipes/curry.html">Curry de Legumes</a></h3>
+        <p>O curry é uma iguaria indiana que conquistou o paladar de grande parte do mundo. Quando junta com legumes cozidos ao ponto, tudo fica melhor ainda!</p>
+      </div>
+    </div>
+
+    <div class="materia">
+      <h3>Por que devemos manter uma alimentação balanceada?</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum, omnis pariatur molestiae hic magnam distinctio cum nihil reiciendis libero quis rerum temporibus dolorem iste non? Ut aut magni alias.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="comentarios">
+      <h2>Comentários</h2>
+
+      <input type="number" id="offset"
+       placeholder="Escolha a chave.">
+      
+      <div class="encryptArea">
+        <p>Digite aqui seu comentário/denúncia...</p>
+        <textarea id="textToEncrypt" cols="50" rows="7" placeholder="Meu nome é Maria, sou moradora da Rua... e estou passando pela seguinte situação de violência..."></textarea>
+      </div>
+
+      <button id="encryptButton">CRIPTOGRAFAR</button>
+      <button id="translateButton">TRADUZIR</button>
+
+      <div class="decryptArea">
+      <textarea id="textToDecrypt" cols="50" rows="7" placeholder="Aqui aparecerá sua mensagem criptografada ou traduzida!"></textarea>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="index.js" type="module"></script>
+
+</body>
+</html>

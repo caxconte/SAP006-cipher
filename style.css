@@ -1,0 +1,154 @@
+
+* {
+	margin:0;
+	padding:0;
+}
+ 
+body {
+	background-color: #FDF5D0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #8A0101;
+	padding-bottom: 60px;
+	margin-left: 95px;
+	margin-right: 95px;
+	margin-top: 20px;
+}
+
+a {
+	font-weight: bold;
+	color: #8A0101;
+	font-style: normal;
+}
+
+.logo {
+	width: 458px;
+	height: 94px;
+	left: 100px;
+	margin-top: 50px;
+	font-family: Sarabun;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: #770D15;
+}
+
+.menu {
+	float: right;
+	margin: -60px;
+	margin-right: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+	list-style: none;
+}
+
+li {
+    list-style: none; 
+    margin: 0px;
+    display: inline-block;
+}
+
+li a {
+    padding: 5px 10px; 
+    margin:0px;
+    border: 0px solid #f00; 
+    background: #49631C;
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+	border-radius: 15px 4px;
+	/* justify-content: end; */
+}
+
+li a:hover {
+    background: #770D15;
+    color: #FFF; 
+	border-radius: 4px 15px;
+	justify-content: end;
+}
+
+.mae-recipe {
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+    justify-content: space-around;
+}
+
+.filha-recipe {
+	width: 20%;
+    text-align: center;
+    margin-top: 150px;
+    float: left;
+	margin: 2px;
+	background: #90A74C;
+}
+
+.icone-img {
+	width: 100%;
+	float: left;
+	object-fit: cover;
+}
+
+.filha-recipe, .materia > h3 {
+	text-align: center;
+    width: 100%;
+	margin: 20px;
+}
+
+.filha-recipe, .materia > p {   
+    text-align: center;
+    width: 100%;
+	margin: 20px;
+} 
+
+.materia {
+	background-color: #90A74C;
+	justify-content: center;
+	float: left;
+	margin: 60px;
+}
+
+.comentarios > #offset {
+	background-color: #90A74C;
+	border: 1px solid #888;
+	resize:	none;
+	overflow:hidden;
+	display: center;
+}
+
+.comentarios > h2 {
+	text-align: center;
+	font-weight: bolder;
+	display: block;
+}
+
+.encryptArea {
+	float: left;
+	width: 470px;
+	height: 195px;
+}
+
+.encryptArea > p {
+	text-align: center;
+}
+
+.decryptArea {
+	float: right;
+	width: 470px;
+	height: 195px;
+}
+
+textarea {
+	position: absolute;
+	width: 470px;
+	height: 195px;
+	background: #90A74C;
+  }
+
+#textToDecrypt::placeholder, #textToEncrypt::placeholder, #offset::placeholder {
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+}
