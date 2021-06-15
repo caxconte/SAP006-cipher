@@ -2,8 +2,6 @@ import cipher from './cipher.js';
 
 let textToDecrypt = document.getElementById("textToDecrypt");
 
-// Botões //
-
 const encryptBtn = document.getElementById("encryptButton");
 
     function encryptButtonFunction () {
