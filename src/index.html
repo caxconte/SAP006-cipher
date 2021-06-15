@@ -11,62 +11,53 @@
 
 <body>
   <header>
-    <h1>Frida K'alho</h1>
-      <!-- <p>
-        <h2>
-        "Amuralhar o próprio sofrimento é arriscar que ele
-        te devore desde o interior." - Frida Kahlo
-        </h2>
-      </p> -->
+    <h1 class="logo"><img src="./img/garlic.png" id="img-logo" width="60" height="60"> Frida K'alho</h1>
+
+    <nav class="menu" id="principal">
+      <ul>
+        <li><a href="pages/AboutUs.html" class="about-us">Sobre Nós</a></li>
+        <li><a href="pages/AboutCipher.html">Sobre a Cifra</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav class="menu" id="principal">
-    <ul>
-      <li><a href="src/receitas/index.html" class="home">HOME</a></li>
-      <li><a href="src/receitas/receita1.html">VEGANAS</a></li>
-      <li><a href="src/receitas/receita2.html">CARNÍVORAS</a></li>
-      <li><a href="src/receitas/receita3.html">SALADAS</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <div class="content">
-      <div class="receita">
+    <div class="mae-recipe">
+      <div class="filha-recipe">
+        <img class="icone-img" src="./img/lasanha-berinjela.jpg" href="./recipes/lasanha-berinjela.html">
+        <h3><a href=recipes/lasanha-berinjela.html>Lasanha de Berinjela</h3></a>
+        <p>Já imaginou cozinhar em apenas 50 minutos uma lasanha extremamente saborosa? Confere aqui!</p>
+      </div>
 
-      <h3>NOME DA RECEITA</h3>
-      <img url="">
-      <br>
-      INGREDIENTES
-      <br>
-      <br>1kg de carne moída
-      <br>5c.s. de óleo
-      <br>1 cebola grande ralada
-      <br>5 dentes de alho amassados
-      <br>2pct de Doritos (grande)
-      <br>200g de queijo cheddar de bisnaga
-      <br>1 1/2c.s. de pimenta chilli
-      <br>3c.s. de molho inglês 
-      <br>Sal e temperos como ervas finas, manjerona e outros, a gosto
 
-      <br><br>MODO DE PREPARO
-      <br>Coloque numa panela o óleo, a cebola e o alho e doure, em seguida acrescente a carne moída e frite bem.
-      <br>Então coloque temperos do seu gosto, o sal, o molho inglês e a pimenta chilli.
-      <br>Depois de preparada a carne, forre uma travessa com o doritos, coloque a carne por cima, depois o sour cream e por ultimo o queijo cheddar.
+      <div class="filha-recipe">
+        <img class="icone-img" src="./img/abobrinha-recheada.jpeg" href="./recipes/abobrinha.html">
+        <h3><a href=recipes/abobrinha.html>Abobrinha Recheada</h3></a>
+        <p>Essa receita contém quinoa, um ingrediente super saudável e muito versátil!</p>
+      </div>
 
-      <br><br>Coloque no forno por cerca de 15 minutos, numa temperatura de cerca de 180º graus.
+      <div class="filha-recipe">
+        <img class="icone-img" src="./img/churrasco-vegetariano.jpg" href="./recipes/churrasco.html">
+        <h3><a href=recipes/churrasco.html>Churrasco Vegetariano</h3></a>
+        <p>Quem não ama um bom churrasco brasileiro? Se você não come carne, não precisa se preocupar, confere essas dicas de espetinhos vegetarianos deliciosos!</p>
+      </div>
 
-      <!-- <div class="icone-receita">
-        <img class="icone-img" src="./img/lasanha-berinjela.jpg" alt="">
-        <p>LASANHA DE BERINJELA</p>
-      </div> -->
-
-      <div class="icone-receita">QUICHE DE ESPINAFRE</div>
-      <div class="icone-receita">SPAGUETTI DE ABOBRINHA</div>
-      <div class="icone-receita">STROGONOFF DE PALMITO</div>
-
+      <div class="filha-recipe">
+        <img class="icone-img" src="./img/curry-de-legumes.jpg" href="./recipes/curry.html">
+        <h3><a href=recipes/curry.html>Curry de Legumes</h3></a>
+        <p>O curry é uma iguaria indiana que conquistou o paladar de grande parte do mundo. Quando junta com legumes cozidos ao ponto, tudo fica melhor ainda!</p>
+      </div>
     </div>
-  </div>
-    <section id="comentarios">
+
+    <div class="materia">
+      <h3>Por que devemos manter uma alimentação balanceada?</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum, omnis pariatur molestiae hic magnam distinctio cum nihil reiciendis libero quis rerum temporibus dolorem iste non? Ut aut magni alias.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="comentarios">
       <h2>Comentários</h2>
 
       <input type="number" id="offset"
@@ -75,7 +66,6 @@
       <div class="encryptArea">
         <p>Digite aqui seu comentário/denúncia...</p>
         <textarea id="textToEncrypt" cols="50" rows="7" placeholder="Meu nome é Maria, sou moradora da Rua... e estou passando pela seguinte situação de violência..."></textarea>
-
       </div>
 
       <button id="encryptButton">CRIPTOGRAFAR</button>
@@ -85,12 +75,7 @@
       <textarea id="textToDecrypt" cols="50" rows="7" placeholder="Aqui aparecerá sua mensagem criptografada ou traduzida!"></textarea>
       </div>
 
-    </section>
-  </main>
-
-  <footer>
-
-
+    </div>
   </footer>
 
   <script src="index.js" type="module"></script>
